@@ -1,0 +1,54 @@
+"FOSS Browser" ist eine vollständig freie (wie in Freiheit) Android-Anwendung. Der Quellcode ist öffentlich zugänglich. FOSS Browser benötigt keine unnötigen
+Berechtigungen. Es ist ein einfacher Android browser basierend auf webview. FOSS Browser soll ein einfacher und kleiner Browser sein, der funktional und optisch
+ansprechend ist.
+
+-------------------------------------------------
+<b>SICHERHEIT/DATEN</b>
+-------------------------------------------------
+
+• komplett quelloffen
+• keine Tracker
+• keine unnötigen Berechtigungen
+• Cookies von Drittanbietern deaktiviert
+• Einstellungen für Cookies, Javascript, Standort, Verlauf
+• Ausnahmen für Javascript, Cookies, Adblock und entfernte Inhalte
+• Bilder laden deaktivieren (optional)
+• do not track me
+• Daten sichern
+• AdBlocker
+• Daten beim Verlassen löschen (optional)
+
+-------------------------------------------------
+<b>UI/HANDHABUNG</b>
+-------------------------------------------------
+
+• für Einhand-Benutzung optimiert (Toolbar unten)
+• Tabkontrolle (wechseln, öffnen, schließen beliebig vieler Tabs)
+• Material Design
+• Toolbar beim Browsen ausblenden (optional)
+• Navigations-Knopf (bei ausgeblendeter Toolbar, optional)
+• Schnelleinstellungen für die wichtigsten Dinge
+• Gestensteuerung (Toolbar und Navigationsknopf)
+
+-------------------------------------------------
+<b>NICE TO HAVE</b>
+-------------------------------------------------
+
+• kleine Größé
+• auf der Seite suchen
+• Websuche (über geteilten Text)
+• PDF speichern
+• Links in anderen Anwendungen öffnen (z.B. YouTube)
+
+-------------------------------------------------
+<b>LINKS</b>
+-------------------------------------------------
+
+• Readme: https://github.com/scoute-dich/browser/README.md
+• Releases: https://github.com/scoute-dich/browser/releases
+• Changelog: https://github.com/scoute-dich/browser/blob/master/CHANGELOG.md
+• Privacy: https://github.com/scoute-dich/browser/blob/master/PRIVACY.md
+• License: https://github.com/scoute-dich/browser/blob/master/LICENSE.md
+• Code of conduct: https://github.com/scoute-dich/browser/blob/master/CODE_OF_CONDUCT.md
+• Contributing: https://github.com/scoute-dich/browser/blob/master/CONTRIBUTING.md
+• XDA • Link: http://forum.xda-developers.com/android/apps-games/app-browser-t3500091

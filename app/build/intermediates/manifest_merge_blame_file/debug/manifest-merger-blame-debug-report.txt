@@ -1,0 +1,254 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="de.baumann.browser"
+4    android:versionCode="105"
+5    android:versionName="7.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml
+10
+11    <!-- Permission -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:9:5-67
+12-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:9:22-64
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:10:5-81
+13-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:10:22-78
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:11:5-79
+14-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:11:22-76
+15    <uses-permission
+15-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:12:5-14:37
+16        android:name="android.permission.READ_EXTERNAL_STORAGE"
+16-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:13:9-64
+17        android:maxSdkVersion="28" />
+17-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:14:9-35
+18    <uses-permission
+18-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:15:5-17:38
+19        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+19-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:16:9-65
+20        android:maxSdkVersion="28" />
+20-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:17:9-35
+21    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+21-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:18:5-88
+21-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:18:22-85
+22
+23    <!-- Application -->
+24    <application
+24-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:21:5-121:19
+25        android:allowBackup="true"
+25-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:25:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.1.0] C:\Users\prointernet104\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:fullBackupContent="@xml/backup_descriptor"
+28-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:29:9-59
+29        android:hardwareAccelerated="true"
+29-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:27:9-43
+30        android:icon="@mipmap/ic_launcher"
+30-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:23:9-43
+31        android:label="@string/app_name"
+31-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:22:9-41
+32        android:largeHeap="true"
+32-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:26:9-33
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:24:9-54
+34        android:usesCleartextTraffic="true" >
+34-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:28:9-44
+35
+36        <!-- BrowserActivity -->
+37        <activity
+37-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:33:9-69:20
+38            android:name="de.baumann.browser.activity.BrowserActivity"
+38-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:33:19-77
+39            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+39-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:36:19-87
+40            android:label="@string/app_name"
+40-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:34:19-51
+41            android:launchMode="singleTask"
+41-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:35:19-50
+42            android:theme="@style/AppTheme"
+42-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:38:19-50
+43            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+43-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:37:19-79
+44            <intent-filter android:icon="@mipmap/ic_launcher" >
+44-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:40:13-45:29
+44-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:41:17-51
+45                <action android:name="android.intent.action.SEND" />
+45-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:42:17-69
+45-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:42:25-66
+46
+47                <category android:name="android.intent.category.DEFAULT" />
+47-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:43:17-76
+47-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:43:27-73
+48
+49                <data android:mimeType="text/plain" />
+49-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:44:17-55
+49-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:44:23-52
+50            </intent-filter>
+51            <intent-filter>
+51-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:47:13-53:29
+52                <action android:name="android.intent.action.VIEW" />
+52-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:48:17-69
+52-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:48:25-66
+53
+54                <category android:name="android.intent.category.DEFAULT" />
+54-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:43:17-76
+54-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:43:27-73
+55                <category android:name="android.intent.category.BROWSABLE" />
+55-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:50:17-78
+55-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:50:27-75
+56
+57                <data android:scheme="http" />
+57-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:44:17-55
+57-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:51:23-44
+58                <data android:scheme="https" />
+58-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:44:17-55
+58-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:51:23-44
+59            </intent-filter>
+60            <intent-filter>
+60-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:55:13-63:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:56:17-68
+61-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:56:25-66
+62                <action android:name="android.intent.action.WEB_SEARCH" />
+62-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:57:17-75
+62-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:57:25-72
+63
+64                <category android:name="android.intent.category.DEFAULT" />
+64-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:43:17-76
+64-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:43:27-73
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:59:17-76
+65-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:59:27-74
+66
+67                <action android:name="sc_startPage" />
+67-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:60:17-55
+67-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:60:25-52
+68                <action android:name="sc_bookmark" />
+68-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:61:17-54
+68-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:61:25-51
+69                <action android:name="sc_history" />
+69-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:62:17-53
+69-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:62:25-50
+70            </intent-filter>
+71
+72            <meta-data
+72-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:65:13-66:60
+73                android:name="android.app.searchable"
+73-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:65:24-61
+74                android:resource="@xml/searchable" />
+74-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:66:24-58
+75            <meta-data
+75-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:67:13-68:53
+76                android:name="android.app.shortcuts"
+76-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:67:24-60
+77                android:resource="@xml/shortcuts" />
+77-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:68:17-50
+78        </activity>
+79
+80        <!-- Settings -->
+81        <activity
+81-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:72:9-74:46
+82            android:name="de.baumann.browser.activity.Settings_Activity"
+82-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:72:19-79
+83            android:label="@string/setting_label"
+83-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:73:13-50
+84            android:theme="@style/AppTheme" />
+84-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:74:13-44
+85        <activity
+85-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:76:9-78:46
+86            android:name="de.baumann.browser.activity.Whitelist_AdBlock"
+86-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:76:19-79
+87            android:label="@string/setting_title_whitelist"
+87-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:77:13-60
+88            android:theme="@style/AppTheme" />
+88-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:78:13-44
+89        <activity
+89-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:80:9-82:46
+90            android:name="de.baumann.browser.activity.Whitelist_Javascript"
+90-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:80:19-82
+91            android:label="@string/setting_title_whitelistJS"
+91-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:81:13-62
+92            android:theme="@style/AppTheme" />
+92-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:82:13-44
+93        <activity
+93-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:84:9-86:46
+94            android:name="de.baumann.browser.activity.Whitelist_Cookie"
+94-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:84:19-78
+95            android:label="@string/setting_title_whitelistCookie"
+95-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:85:13-66
+96            android:theme="@style/AppTheme" />
+96-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:86:13-44
+97        <activity
+97-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:88:9-90:46
+98            android:name="de.baumann.browser.activity.Whitelist_Remote"
+98-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:88:19-78
+99            android:label="@string/setting_title_whitelistRemote"
+99-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:89:13-66
+100            android:theme="@style/AppTheme" />
+100-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:90:13-44
+101        <activity
+101-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:92:9-94:46
+102            android:name="de.baumann.browser.activity.Settings_ClearActivity"
+102-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:92:19-84
+103            android:label="@string/setting_title_clear_control"
+103-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:93:13-64
+104            android:theme="@style/AppTheme" />
+104-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:94:13-44
+105        <activity
+105-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:96:9-98:46
+106            android:name="de.baumann.browser.activity.Settings_StartActivity"
+106-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:96:19-84
+107            android:label="@string/setting_title_start_control"
+107-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:97:13-64
+108            android:theme="@style/AppTheme" />
+108-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:98:13-44
+109        <activity
+109-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:100:9-102:46
+110            android:name="de.baumann.browser.activity.Settings_DataActivity"
+110-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:100:19-83
+111            android:label="@string/setting_title_data"
+111-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:101:13-55
+112            android:theme="@style/AppTheme" />
+112-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:102:13-44
+113        <activity
+113-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:104:9-106:46
+114            android:name="de.baumann.browser.activity.Settings_UIActivity"
+114-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:104:19-81
+115            android:label="@string/setting_title_ui"
+115-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:105:13-53
+116            android:theme="@style/AppTheme" />
+116-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:106:13-44
+117        <activity
+117-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:108:9-110:46
+118            android:name="de.baumann.browser.activity.Settings_GestureActivity"
+118-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:108:19-86
+119            android:label="@string/setting_gestures"
+119-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:109:13-53
+120            android:theme="@style/AppTheme" />
+120-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:110:13-44
+121        <activity
+121-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:112:9-114:46
+122            android:name="de.baumann.browser.activity.Settings_FilterActivity"
+122-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:112:19-85
+123            android:label="@string/setting_filter"
+123-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:113:13-51
+124            android:theme="@style/AppTheme" />
+124-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:114:13-44
+125
+126        <!-- ClearService | Provider -->
+127        <service
+127-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:117:9-119:54
+128            android:name="de.baumann.browser.service.ClearService"
+128-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:117:18-72
+129            android:icon="@mipmap/ic_launcher"
+129-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:119:18-52
+130            android:label="@string/app_name" />
+130-->D:\Downloads\browser-master\app\src\main\AndroidManifest.xml:118:18-50
+131    </application>
+132
+133</manifest>
